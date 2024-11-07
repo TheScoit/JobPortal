@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="border-t border-t-gray-200 py-8">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="mb-4 md:mb-0">
+          <div className="mb-4 md:mb-0 text-center lg:text-start">
             <h2 className="text-xl font-bold">Job 
               <span className='mx-0.5 text-[#3094a6]'>
               Hunt

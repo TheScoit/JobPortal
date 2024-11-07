@@ -70,8 +70,8 @@ const Signup = () => {
     return (
         <div>
             <Navbar />
-            <div className='flex items-center justify-center max-w-7xl mx-auto'>
-                <form onSubmit={submitHandler} className='w-1/2 border border-gray-200 rounded-md p-4 my-10'>
+            <div className='flex items-center justify-center max-w-7xl mx-auto p-5'>
+                <form onSubmit={submitHandler} className='w-full  border border-gray-200 rounded-md p-5 my-5 sm:w-full md:w-1/2'>
                     <h1 className='font-bold text-xl mb-5 text-center text-[#90E0EF]'>Sign Up</h1>
                     <div className='my-2'>
                         <Label>Full Name</Label>
@@ -113,7 +113,7 @@ const Signup = () => {
                             placeholder="*******"
                         />
                     </div>
-                    <div className='flex items-center justify-between'>
+                    <div className='flex items-center justify-between lg:flex-wrap md:flex-wrap sm:flex-wrap flex-wrap  '>
                         <RadioGroup className="flex items-center gap-4 my-5">
                             <div className="flex items-center space-x-2">
                                 <Input
@@ -138,7 +138,7 @@ const Signup = () => {
                                 <Label htmlFor="r2">Recruiter</Label>
                             </div>
                         </RadioGroup>
-                        <div className='flex items-center gap-2'>
+                        <div className='flex items-center gap-2 '>
                             <Label>Profile</Label>
                             <Input
                                 accept="image/*"

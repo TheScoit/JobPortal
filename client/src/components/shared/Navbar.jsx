@@ -31,14 +31,14 @@ const Navbar = () => {
     return (
         <div className='bg-white'>
             <div className='flex items-center justify-between mx-auto max-w-7xl h-16'>
-                <div>
+                <div className='m-7'>
                     <Link to='/'>
                     <h1 className='text-2xl font-bold '>Job
                     <span className='text-[#90E0EF] mx-0.5 '>Portal</span>
                     </h1>
                     </Link>
                 </div>
-                <div className='flex items-center gap-12'>
+                <div className='md:flex md:items-center md:gap-12 hidden'>
                     <ul className='flex font-medium items-center gap-5'>
                         {
                             user && user.role === 'recruiter' ? (
