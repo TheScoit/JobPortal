@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { Popover, PopoverContent, PopoverTrigger } from '../ui/popover'
 import { Button } from '../ui/button'
 import { Avatar, AvatarImage } from '../ui/avatar'
@@ -9,8 +9,11 @@ import axios from 'axios'
 import { USER_API_END_POINT } from '@/utils/constant'
 import { setUser } from '@/redux/authSlice'
 import { toast } from 'sonner'
+import MenuIcon from '@mui/icons-material/Menu';
+
 
 const Navbar = () => {
+    const [isOpen,setIsOpen] = useState(false);
     const { user } = useSelector(store => store.auth);
     const dispatch = useDispatch();
     const navigate = useNavigate();
@@ -38,8 +41,8 @@ const Navbar = () => {
                     </h1>
                     </Link>
                 </div>
-                <div className='md:flex md:items-center md:gap-12 hidden'>
-                    <ul className='flex font-medium items-center gap-5'>
+                <div className='md:flex md:items-center md:gap-12 '>
+                    <ul className='md:flex font-medium items-center gap-5 hidden '>
                         {
                             user && user.role === 'recruiter' ? (
                                 <>
@@ -59,7 +62,7 @@ const Navbar = () => {
                     </ul>
                     {
                         !user ? (
-                            <div className='flex items-center gap-2'>
+                            <div className='md:flex items-center gap-2 hidden'>
                                 <Link to="/login"><Button variant="outline">Login</Button></Link>
                                 <Link to="/signup"><Button className="bg-[#62b2c0] hover:bg-[#3094a6]">Signup</Button></Link>
                             </div>
@@ -99,6 +102,24 @@ const Navbar = () => {
                                     </div>
                                 </PopoverContent>
                             </Popover>
+                        )
+                    }
+
+                    <div  className="w-10 flex-col items-start p-[2px 3px] gap-16 list-none  sm:contents lg:hidden md:hidden" onClick={() => setIsOpen(!isOpen) }>
+                        <MenuIcon  style={{color: 'inherit'}} />
+                    </div>
+
+                    {
+                        isOpen && (
+                           <div className="w-full h-60 flex absolute top-14 right-0 p-7 py-4 gap-5 flex-col items-start  list-none  sm:contents lg:hidden md:hidden bg-gray-50 z-50" isOpen={isOpen}>
+                            <Link onClick={()=> setIsOpen(!isOpen)} to="/" className='text-black hover:text-[#3094a6]'>Home</Link>
+                            <Link onClick={()=> setIsOpen(!isOpen)} to="/jobs" className='text-black hover:text-[#3094a6]'>Jobs</Link>
+                            <Link onClick={()=> setIsOpen(!isOpen)} to="/browse" className='text-black hover:text-[#3094a6]'>Browse</Link>
+                            <div className="gap-12 h-11 flex content-center items-center w-full relative top-3">
+                            <Link to="/login"><Button variant="outline">Login</Button></Link>
+                            <Link to="/signup"><Button className="bg-[#62b2c0] hover:bg-[#3094a6]">Signup</Button></Link>
+                            </div>
+                           </div>
                         )
                     }
 
