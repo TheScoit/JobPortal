@@ -10,9 +10,9 @@ Built with **React (Vite)**, **Node.js**, and **MongoDB**, this portal provides 
 
 ## 📸 Preview
 
-(<img width="1918" height="868" alt="image" src="https://github.com/user-attachments/assets/b836efb1-187e-4e5d-8611-713bd757de5b" />)
+<img width="1918" height="868" alt="image" src="https://github.com/user-attachments/assets/b836efb1-187e-4e5d-8611-713bd757de5b" />
 
-(<img width="1917" height="872" alt="image" src="https://github.com/user-attachments/assets/368bac4f-4472-4d79-a3b7-282f5cd79657" />) 
+<img width="1917" height="872" alt="image" src="https://github.com/user-attachments/assets/368bac4f-4472-4d79-a3b7-282f5cd79657" />
 
 ##  Features
 
