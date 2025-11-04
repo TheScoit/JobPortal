@@ -1,5 +1,8 @@
 # Job Portal Website
 
+## Live Website
+https://jobportal-67kr.onrender.com/
+
 A modern **Job Portal Web Application** that connects **recruiters** and **job seekers** in a single platform.  
 Built with **React (Vite)**, **Node.js**, and **MongoDB**, this portal provides a seamless experience for job posting, searching, and application tracking.
 
@@ -7,17 +10,13 @@ Built with **React (Vite)**, **Node.js**, and **MongoDB**, this portal provides 
 
 ## 📸 Preview
 
-| Homepage | Job Listings | Job Details |
-
-
-| ![Homepage Screenshot]
 (<img width="1918" height="868" alt="image" src="https://github.com/user-attachments/assets/b836efb1-187e-4e5d-8611-713bd757de5b" />)
-| ![Job Listings Screenshot]
+
 (<img width="1917" height="872" alt="image" src="https://github.com/user-attachments/assets/368bac4f-4472-4d79-a3b7-282f5cd79657" />) 
 
-## 🚀 Features
+##  Features
 
-### 👩‍💼 For Job Seekers
+###  For Job Seekers
 - Create and manage profiles.
 - Browse and search job listings with filters.
 - Apply for jobs directly through the portal.
@@ -46,12 +45,6 @@ Built with **React (Vite)**, **Node.js**, and **MongoDB**, this portal provides 
 | **Authentication** | JWT / Appwrite Auth |
 | **Deployment** | Vercel / Netlify (Frontend), Render / Hostinger / Railway (Backend) |
 
-
-
-##  Folder Structure
-
----
-
 ##  Functionality Overview
 
 | Function | Description |
@@ -63,9 +56,8 @@ Built with **React (Vite)**, **Node.js**, and **MongoDB**, this portal provides 
 | **Admin Controls** | Full access to user and job management. |
 
 
+
 ## Getting Started
-
-
 ###  Clone the Repository
 ```bash
 git clone https://github.com/yourusername/job-portal.git
